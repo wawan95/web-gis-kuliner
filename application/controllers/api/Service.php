@@ -62,12 +62,7 @@ class Service extends REST_Controller {
 // $this->db->join('comments', 'comments.id = blogs.id');
 // $query = $this->db->get();
 
-        function yolo_get(){
-            $id_kategori = $this->get('id_kategori');
-            $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_kuliner.id_kategori', 'left');
-            $id_kategori = $this->db->get('tbl_kuliner')->result();
-            $this->response(array('kuliner'=>$id_kategori),200);           
-        }
+      
 
     }
 ?>
